@@ -1,4 +1,4 @@
-close all; 
+bclose all; 
 clc;
 clear all;
 bem=[ 1,1,0,1,1,1,1,1,0,1; 

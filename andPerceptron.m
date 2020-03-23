@@ -50,6 +50,10 @@ while E~=0
              %plot(bem,bem*(w+tanulrata*(anderedmeny(i)-yi)*bem(i,:)')+b);
              plot(bem(i,1),bem(i,2), 'ko', 'LineWidth', 5 ); end;
     end;
+    x=-1:0.01:2;
+    m=-(b/s2)/(b/s1);
+    X=m*x+(-b/s2) -0.1;
+    plot(x,X)
     pause()
 end;
 

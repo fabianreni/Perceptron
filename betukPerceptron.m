@@ -1,4 +1,4 @@
-bclose all; 
+close all; 
 clc;
 clear all;
 bem=[ 1,1,0,1,1,1,1,1,0,1; 
@@ -8,7 +8,7 @@ eredmeny= [1;0];
 tanulrata=1;
 s=rand(N,n);
 E=1;
-%rektor ur altal hasznalt kodresz
+%rektor ur altal hasznalt kodresz de ide nem ilik be
 % for i=1:50
 %    y(i)=-10*i/50+5;
 %    ay(i)=1/(1+exp(-10*y(i)));
@@ -34,6 +34,7 @@ while E~=0
        s = s + tanulrata*ei*bem(i,:);
        E = E + ei^2;
     end
+    
     for i=1:N
         if yi==0
             hold on; grid on;
@@ -46,5 +47,6 @@ while E~=0
      end;
    
     pause()
-    y
+    
 end;
+
